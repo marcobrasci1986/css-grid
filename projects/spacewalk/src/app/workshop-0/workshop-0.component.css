@@ -1,6 +1,18 @@
 :host {
-  display: block;
-  padding: 20px;
+  display: grid;
+
+  grid-template-columns: 30% 70%; /* 2 columns 1 van 30% en een van 70%*/
+}
+
+div.box-0 {
+  /* grid-column: 1/-1; span from 1 to the end dynamically
+  -1 is counting back from the other side */
+  grid-column: span 2;
+}
+
+div.box-3 {
+  grid-column-start: 2;
+  /*grid-column: span 1;*/
 }
 
 div {
